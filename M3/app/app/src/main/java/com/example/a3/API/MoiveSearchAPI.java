@@ -12,7 +12,7 @@ import java.util.List;
 import java.util.Scanner;
 
 public class MoiveSearchAPI {
-    private static final String tmdb_key ="837137c834a5c728df83b6d258268a7c";
+    private static final String tmdb_key ="";
 
     public static String searchMoive(String keyword){
         keyword = keyword.trim().replace(" ","%20");

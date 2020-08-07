@@ -5,7 +5,7 @@ import java.net.URL;
 import java.util.Scanner;
 
 public class MapsAPI {
-    public static final String map_key = "AIzaSyBDCjlzF8g5vHw-XRmBTsmYEQdsGQBxDUY";
+    public static final String map_key = "";
 
     public static String searchLocation(String address) {
         address = address.trim().replace(" ", "");
