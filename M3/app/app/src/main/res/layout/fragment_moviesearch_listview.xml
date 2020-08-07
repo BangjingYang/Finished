@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:id="@+id/iv_smList"/>
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:id="@+id/tv_smnList"/>
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:id="@+id/tv_srdList"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_smidList"
+        android:visibility="invisible"/>
+
+</LinearLayout>

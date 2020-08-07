@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/mv_scollview"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/mv_image"
+            android:scaleType="center"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mv_image"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="10dp"
+            android:layout_marginTop="10dp"
+            android:textSize="25sp"
+            android:id="@+id/tv_mv_moviename"/>
+
+        <TextView
+            android:id="@+id/tv_mv_releasedate"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_below="@+id/tv_mv_moviename"
+            android:textSize="25sp"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="10dp" />
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/tv_mv_releasedate"
+            android:paddingTop="10dp"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:id="@+id/tv_mv_genre"/>
+
+        <TextView
+            android:id="@+id/tv_mv_country"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_mv_releasedate"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:layout_toRightOf="@+id/tv_mv_genre"
+            android:paddingTop="10dp" />
+
+        <TextView
+            android:id="@+id/tv_mv_overview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_mv_genre"
+            android:paddingTop="10dp"
+            android:textSize="20sp"
+            android:text="Moive Overview"/>
+        <TextView
+            android:id="@+id/tv_mv_overviews"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_mv_overview"
+            android:paddingTop="10dp"/>
+
+        <TextView
+            android:id="@+id/tv_mv_casts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_mv_overviews"
+            android:paddingTop="10dp"
+            android:textSize="20sp"
+            android:text="Casts"/>
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:layout_below="@+id/tv_mv_casts"
+            android:id="@+id/lv_mv_cast"
+            android:paddingTop="10dp"/>
+
+        <TextView
+            android:id="@+id/tv_mv_director"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lv_mv_cast"
+            android:paddingTop="10dp"
+            android:textSize="20sp"
+            android:text="Director"/>
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_mv_director"
+            android:id="@+id/lv_mv_director"
+            android:paddingTop="10dp"/>
+
+        <TextView
+            android:id="@+id/tv_mv_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lv_mv_director"
+            android:paddingTop="10dp"
+            android:textSize="20sp"
+            android:text="Rating Score"/>
+        <TextView
+            android:id="@+id/tv_mv_ratingscore"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tv_mv_rating"
+            android:layout_below="@+id/lv_mv_director"
+            android:layout_marginLeft="50dp"
+            android:paddingTop="10dp"
+            android:textSize="20sp"/>
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rb_mv_rating"
+            android:layout_below="@+id/tv_mv_rating"
+            android:isIndicator="true"
+            android:paddingTop="10dp"
+            style="?android:attr/ratingBarStyleSmall"
+            android:numStars="10"
+            android:rating="9"/>
+
+        <Button
+            android:id="@+id/button_watchList"
+            android:layout_width="150dp"
+            android:layout_height="45dp"
+            android:layout_below="@+id/rb_mv_rating"
+            android:background="@drawable/button"
+            android:text="Add to Witch List"
+            android:textSize="15sp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"/>
+        <Button
+            android:id="@+id/button_memoir"
+            android:layout_width="150dp"
+            android:layout_height="45dp"
+            android:layout_toEndOf="@+id/rb_mv_rating"
+            android:layout_gravity="center"
+            android:background="@drawable/button"
+            android:text="Add to Memoir"
+            android:textSize="15sp"
+            android:layout_below="@+id/rb_mv_rating"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="20dp"/>
+
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/sv_addmemoir">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/iv_am"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textSize="20sp"
+            android:layout_below="@+id/iv_am"
+            android:id="@+id/tv_ad_moviename"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textSize="15sp"
+            android:layout_below="@+id/tv_ad_moviename"
+            android:id="@+id/tv_ad_releasedate"/>
+        <TextView
+            android:layout_width="180dp"
+            android:layout_height="45dp"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_below="@+id/tv_ad_releasedate"
+            android:id="@+id/tv_ad_adddate"
+            android:text="Watch date and time"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:background="@drawable/button"
+            android:text="Date"
+            android:layout_marginTop="7dp"
+            android:layout_below="@+id/tv_ad_releasedate"
+            android:layout_toEndOf="@+id/tv_ad_adddate"
+            android:id="@+id/b_ad_date"/>
+
+        <Button
+            android:id="@+id/b_ad_time"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="7dp"
+            android:layout_below="@+id/tv_ad_releasedate"
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@+id/b_ad_date"
+            android:background="@drawable/button"
+            android:text="time" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_below="@+id/b_ad_time"
+            android:id="@+id/tv_ad_pickeddatetime"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_below="@+id/tv_ad_pickeddatetime"
+            android:id="@+id/tv_ad_pickcinema"
+            android:text="Select cinema"/>
+
+        <Spinner
+            android:layout_width="250dp"
+            android:layout_height="45dp"
+            android:layout_below="@+id/tv_ad_pickeddatetime"
+            android:layout_marginStart="25dp"
+            android:layout_toEndOf="@+id/tv_ad_pickcinema"
+            android:id="@+id/sp_ad_pickcinema"/>
+        <Button
+            android:id="@+id/b_ad_addcinema"
+            android:layout_width="180dp"
+            android:layout_height="45dp"
+            android:layout_below="@+id/sp_ad_pickcinema"
+            android:background="@drawable/button"
+            android:layout_centerHorizontal="true"
+            android:text="add new cinema" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_below="@+id/b_ad_addcinema"
+            android:id="@+id/tv_ad_comments"
+            android:text="Enter your comments:"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@+id/tv_ad_comments"
+            android:hint="Enter comments here"
+            android:maxLines="3"
+            android:selectAllOnFocus="true"
+            android:id="@+id/et_ad_comments"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_below="@+id/et_ad_comments"
+            android:id="@+id/tv_ad_rating"
+            android:text="Select your rating score for this movie"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_below="@+id/et_ad_comments"
+            android:layout_toRightOf="@+id/tv_ad_rating"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/tv_ad_ratingnum"/>
+        <com.iarcuschin.simpleratingbar.SimpleRatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_ad_ratingnum"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="10dp"
+            app:srb_starSize = "30dp"
+            app:srb_numberOfStars="10"
+            app:srb_rating="5"
+            app:srb_stepSize="0.5"
+            app:srb_drawBorderEnabled="false"
+            app:srb_starBackgroundColor="#c0c0c0"
+            android:id="@+id/rb_ad_rating"/>
+        <Button
+            android:id="@+id/b_ad_addmemoir"
+            android:layout_width="150dp"
+            android:layout_height="45dp"
+            android:layout_below="@+id/rb_ad_rating"
+            android:background="@drawable/button"
+            android:layout_centerHorizontal="true"
+            android:text="add to memoir"
+            android:layout_marginTop="5dp"/>
+
+
+    </RelativeLayout>
+
+</ScrollView>

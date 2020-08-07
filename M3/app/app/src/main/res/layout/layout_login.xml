@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Login">
+
+<!--        <androidx.appcompat.widget.AppCompatImageView&ndash;&gt;-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_gravity="center_horizontal"-->
+<!--        android:layout_margin="20dp"-->
+<!--        app:srcCompat="@drawable/ok" />-->
+    <ImageView
+        android:id="@+id/logImage"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="100dp"
+        android:padding="20dp" />
+
+<EditText
+    android:id="@+id/editText_UserName"
+    android:layout_width="350dp"
+    android:layout_height="45dp"
+    android:layout_gravity="center"
+    android:layout_marginBottom="10dp"
+    android:layout_marginTop="20dp"
+    android:drawableLeft="@drawable/ic_account_box_black_24dp"
+    android:drawablePadding="5dp"
+    android:hint="Username"
+    android:padding="10dp" />
+
+<EditText
+    android:id="@+id/editText_PassWord"
+    android:layout_width="350dp"
+    android:layout_height="50dp"
+    android:layout_gravity="center"
+    android:layout_marginBottom="10dp"
+    android:drawableLeft="@drawable/ic_lock_black_24dp"
+    android:drawablePadding="5dp"
+    android:hint="Password"
+    android:inputType="textPassword"
+    android:padding="10dp" />
+
+<Button
+    android:id="@+id/button_Login"
+    android:layout_width="100dp"
+    android:layout_height="35dp"
+    android:layout_gravity="center"
+    android:layout_margin="5dp"
+    android:background="@drawable/button"
+    android:text="Log in"
+    android:textSize="15sp" />
+
+<Button
+    android:id="@+id/button_SignUp"
+    android:layout_width="100dp"
+    android:layout_height="35dp"
+    android:layout_gravity="center"
+    android:layout_margin="5dp"
+    android:background="@drawable/button"
+    android:text="Sign Up"
+    android:textSize="15sp" />
+
+</LinearLayout>

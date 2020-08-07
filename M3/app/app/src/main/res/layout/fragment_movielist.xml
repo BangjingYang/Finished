@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/sv_scrollView">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+
+        <ImageView
+            android:id="@+id/ml_logo"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:scaleType="center"/>
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="35dp"
+            android:id="@+id/mv_tv_moviename"
+            android:text="Movie Name"
+            android:layout_below="@+id/ml_logo"/>
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:id="@+id/mv_tv_releasedate"
+            android:text="Release Date"
+            android:layout_below="@+id/ml_logo"
+            android:layout_toEndOf="@+id/mv_tv_moviename"/>
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:id="@+id/mv_tv_adddate"
+            android:text="Added Date"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/ml_logo"
+            android:layout_toEndOf="@+id/mv_tv_releasedate"/>
+        <ListView
+            android:id="@+id/ml_lv"
+            android:layout_width="wrap_content"
+            android:layout_height="350dp"
+            android:layout_below="@+id/mv_tv_adddate"
+            android:padding="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ml_tv_select"
+            android:textSize="25sp"
+            android:layout_below="@+id/ml_lv"
+            android:layout_centerHorizontal="true"
+            android:padding="10dp"/>
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="45dp"
+            android:id="@+id/ml_b_viewmovie"
+            android:layout_below="@+id/ml_tv_select"
+            android:text="View Movie"
+            android:textSize="15sp"
+            android:background="@drawable/button"/>
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="45dp"
+            android:id="@+id/ml_b_deletemovie"
+            android:layout_below="@+id/ml_tv_select"
+            android:layout_toEndOf="@+id/ml_b_viewmovie"
+            android:text="delete movie"
+            android:textSize="15sp"
+            android:background="@drawable/button"
+            android:layout_marginLeft="80dp"/>
+
+
+    </RelativeLayout>
+
+</ScrollView>

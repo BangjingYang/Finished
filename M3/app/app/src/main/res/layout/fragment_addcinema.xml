@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/iv_ac_img"/>
+
+    <TextView
+        android:id="@+id/tv_ac_cinemaname"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:textSize="30dp"
+        android:layout_below="@id/iv_ac_img"
+        android:text="Cinema Name:"
+        />
+
+    <EditText
+        android:id="@+id/et_ac_cname"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/tv_ac_cinemaname"
+        android:hint="Enter new cinema name"/>
+
+
+
+    <TextView
+        android:id="@+id/tv_ac_cinemasubburb"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:textSize="30dp"
+        android:layout_below="@id/et_ac_cname"
+        android:text="Suburb:"
+        />
+
+    <EditText
+        android:id="@+id/et_ac_csuburb"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/tv_ac_cinemasubburb"
+        android:hint="Enter new cinema suburb"/>
+
+    <TextView
+        android:id="@+id/tv_ac_cinemapostcode"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:textSize="30dp"
+        android:layout_below="@id/et_ac_csuburb"
+        android:text="Postcode:"
+        />
+
+    <EditText
+        android:id="@+id/et_ac_cpostcode"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/tv_ac_cinemapostcode"
+        android:inputType="number"
+        android:hint="Enter new cinema postcode"/>
+
+    <Button
+        android:id="@+id/b_ac_addcinema"
+        android:layout_width="180dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/et_ac_cpostcode"
+        android:background="@drawable/button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="add new cinema" />
+
+
+</RelativeLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/homeImage"/>
+
+    <TextView
+        android:id="@+id/tv_welcome"
+        android:layout_width="185dp"
+        android:layout_height="60dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:padding="16dp"
+        android:layout_below="@+id/homeImage"/>
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="240dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@id/tv_welcome"
+        android:padding="16dp"
+        android:layout_below="@+id/homeImage"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/moviename"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_below="@id/tv_welcome"
+        android:padding="10dp"
+        android:text="Movie Name"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/releasedate"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_below="@id/tv_welcome"
+        android:layout_toRightOf="@id/moviename"
+        android:padding="10dp"
+        android:text="Release Date"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/Ratingscore"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_below="@id/tv_welcome"
+        android:layout_toRightOf="@id/releasedate"
+        android:padding="10dp"
+        android:text="Rating score"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_below="@id/moviename"
+        android:id="@+id/lv_movie"
+        android:layout_weight="5"/>
+</RelativeLayout>
